@@ -1,23 +1,51 @@
 [
 	{
-		"dates": "June 2018 · Present",
-		"role": "Front-end Engineer",
-		"company": "Full Truck Alliance",
-		"description": "Responsible for customer service and CRM system front-end development.",
-		"logo": "/assets/images/experiences/fta.ico"
+		"dates": "Julio 2021 · Septiembre 2024",
+		"role": "Analista Senior | Flutter Developer para Pacífico Seguros",
+		"company": "Inetum",
+		"description": "Desarrollador móvil con Flutter para el cliente Pacífico Seguros, he colaborado para implementar un paquete de biometría facial utilizando el plugin de Facephi. Formé parte del equipo de desarrollo de la aplicación Mi Espacio Pacífico, la cual se desarrolló bajo el gestor de estados Cubit (Bloc).",
+		"logo": "/assets/images/experiences/inetum.ico"
 	},
 	{
-		"dates": "July 2015 · June 2018",
-		"role": "Front-end Engineer",
-		"company": "YOHO!",
-		"description": "Responsible for mobile front-end development of e-commerce platform.",
-		"logo": "/assets/images/experiences/yoho.ico"
+		"dates": "Octubre 2019 · Diciembre 2021",
+		"role": "Mobile Developer",
+		"company": "Proypet",
+		"description": "Creé la aplicación Proypet; inició como un proyecto web para las veterinarias el cual luego migró a aplicación. Constó de dos aplicaciones, una para petlovers y otra para veterinarios, en la aplicación de petlovers el usuario registra atención para su mascota, puede ver el historial de atenciones y la aplicación envía notificaciones al usuario con avisos y alertas. La aplicación de veterinarios recibe los registro del usuario para ser atendido, puede ver las atenciones anteriores, notas que se realizaron sobre la mascota.",
+		"logo": "/assets/images/experiences/proypet.ico"
 	},
 	{
-		"dates": "September 2014 · July 2015 ",
-		"role": "Node.JS Developer",
-		"company": "WuLian",
-		"description": "Intern, involved in the development of Internet of Things cloud systems.",
-		"logo": "/assets/images/experiences/wulian.ico"
+		"dates": "Septiembre 2019 · Febrero 2020",
+		"role": "Frontend & Analista .NET",
+		"company": "Canvia",
+		"description": "Inicié como analista .net, desarrollando webservices, a las semanas de haber iniciado el área se quedó sin frontend, la líder del equipo estaba buscando algún frontend lo más pronto posible ya que el proyecto iniciaba; me ofrecí para asumir este rol. A pesar de mi falta de experiencia en Angular, me sumergí en el aprendizaje y en una semana ya estaba desempeñando mis nuevas funciones como desarrollador frontend. Fue una experiencia altamente gratificante haber adquirido este nuevo conocimiento y poder contribuir al desarrollo exitoso del proyecto.",
+		"logo": "/assets/images/experiences/canvia.ico"
+	},
+	{
+		"dates": "Octubre 2018 · Marzo 2019",
+		"role": "Analista .NET",
+		"company": "Delaware",
+		"description": "Participé en el desarrollo de los sistemas de la empresa Distriluz, enfocándome en la creación e implementación de servicios web y APIs RESTful. Realicé desarrollos en .NET bajo el modelo MVC en arquitectura de múltiples capas, utilizando T-SQL para la elaboración de stored procedures. También trabajé con tecnologías como JavaScript y Bootstrap para el diseño y funcionalidad de interfaces web.",
+		"logo": "/assets/images/experiences/delaware.ico"
+	},
+	{
+		"dates": "Febrero 2018 · Julio 2018",
+		"role": "Analista Programador",
+		"company": "Everis",
+		"description": "Analista programador en el área de fábrica fallas para el cliente Claro. Análisis de requerimientos funcionales, uso de plsql oracle, visual basic, .Net, pruebas funcionales y unitarias.",
+		"logo": "/assets/images/experiences/everis.ico"
+	},
+	{
+		"dates": "Enero 2016 · Mayo 2017",
+		"role": "Supervisor Analista Desarrollador",
+		"company": "CTM Tours Perú",
+		"description": "Experiencia en análisis y desarrollo de sistemas, diseño y gestión de bases de datos, y desarrollo de aplicaciones web utilizando C#.NET, JavaScript y jQuery. Implementación y consumo de web services SOAP, manejo avanzado de bases de datos en SQL Server con T-SQL, y análisis de requerimientos para el diseño de soluciones personalizadas. Desarrollo de herramientas operativas para el Grupo Costamar en diversos países, integrando funcionalidades como geolocalización con OpenStreetMap y Google API. Planificación y seguimiento de proyectos utilizando Microsoft Project y Gantter.",
+		"logo": "/assets/images/experiences/ctm.ico"
+	},
+	{
+		"dates": "Julio 2014 · Diciembre 2015",
+		"role": "Desarrollador .NET",
+		"company": "CTM Tours Perú",
+		"description": "Desarrollo de aplicaciones web utilizando C#.NET con integración de JavaScript y jQuery, incluyendo la creación y consumo de web services SOAP. Gestión avanzada de bases de datos en SQL Server, abarcando el diseño de nuevas tablas, creación de vistas y optimización de sentencias SQL. Análisis de requerimientos para la implementación de soluciones personalizadas, así como la planificación y desarrollo de proyectos web innovadores.",
+		"logo": "/assets/images/experiences/ctm.ico"
 	}
 ]
