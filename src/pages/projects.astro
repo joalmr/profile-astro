@@ -1,5 +1,6 @@
 ---
 import projects from "../collections/projects.json";
+import Button from "../components/button.astro";
 import PageHeading from "../components/page-heading.astro";
 import Project from "../components/project.astro";
 import Layout from "../layouts/main.astro";
@@ -27,6 +28,10 @@ import Layout from "../layouts/main.astro";
           )
         })
       }
+    </div>
+
+    <div class="flex items-center justify-center w-full py-5">
+      <Button text="Ver más proyectos en GitHub" link="https://github.com/joalmr" />
     </div>
   </section>
 </Layout>
