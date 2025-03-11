@@ -1,7 +1,12 @@
 ---
-import projects from "../../collections/projects.json";
+// import projects from "../../collections/projects.json";
+import { getCollection } from "astro:content";
 import Button from "../button.astro";
 import Project from "../project.astro";
+
+const projects = await getCollection("post");
+
+console.log(projects);
 ---
 
 <section class="max-w-4xl mx-auto px-7 lg:px-0">
@@ -20,10 +25,10 @@ import Project from "../project.astro";
       projects.map((project) => {
         return (
           <Project
-            name={project.name}
-            description={project.description}
-            image={project.image}
-            url={project.url}
+            name={project.data.name}
+            description={project.data.description}
+            image={project.data.image}
+            url={`/project/${project.id}`}
           />
         )
       })

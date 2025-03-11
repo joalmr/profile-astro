@@ -1,9 +1,14 @@
 ---
-import projects from "../collections/projects.json";
-import Button from "../components/button.astro";
-import PageHeading from "../components/page-heading.astro";
-import Project from "../components/project.astro";
-import Layout from "../layouts/main.astro";
+import Button from "@components/button.astro";
+import PageHeading from "@components/page-heading.astro";
+import Project from "@components/project.astro";
+import Layout from "@layouts/main.astro";
+import { getCollection } from "astro:content";
+
+const projects = await getCollection("post");
+
+console.log(projects);
+
 ---
 
 <Layout title="Mis Proyectos">
@@ -20,10 +25,10 @@ import Layout from "../layouts/main.astro";
         projects.map((project) => {
           return (
             <Project
-              name={project.name}
-              description={project.description}
-              image={project.image}
-              url={project.url}
+              name={project.data.name}
+              description={project.data.description}
+              image={project.data.image}
+              url={`/project/${project.id}`}
             />
           )
         })

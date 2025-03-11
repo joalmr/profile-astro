@@ -1,0 +1,36 @@
+---
+import Layout from "@layouts/main.astro";
+import type { GetStaticPaths } from "astro";
+import { getCollection } from "astro:content";
+import Button from "@components/button.astro";
+import PageHeading from "@components/page-heading.astro";
+export const getStaticPaths = (async () => {
+    const projects = await getCollection("post");
+
+    return projects.map((project) => ({
+        params: { slug: project.id },
+        props: { project: project.data },
+    }));
+}) satisfies GetStaticPaths;
+
+const { project } = Astro.props;
+---
+<Layout title={project.name} >
+    <section class="relative z-20 max-w-2xl mx-auto my-12 px-7 lg:px-0">
+        <PageHeading
+          title={project.name}
+          description={project.description}
+        />
+    
+        <img src={project.image} class="relative z-30 w-full my-10 rounded-xl" />
+
+        <p>
+            {project.detail}
+        </p>
+
+        <div class="flex items-center justify-center w-full py-5">
+            <Button text={`Ver ${project.name}`} link={project.url} />
+        </div>
+    
+      </section>
+</Layout>
