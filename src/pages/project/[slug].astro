@@ -4,7 +4,6 @@ import type { GetStaticPaths } from "astro";
 import { getCollection } from "astro:content";
 import Button from "@components/button.astro";
 import PageHeading from "@components/page-heading.astro";
-import { Image } from "astro:assets";
 
 export const getStaticPaths = (async () => {
     const projects = await getCollection("post");
