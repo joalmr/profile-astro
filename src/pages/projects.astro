@@ -6,9 +6,6 @@ import Layout from "@layouts/main.astro";
 import { getCollection } from "astro:content";
 
 const projects = await getCollection("post");
-
-console.log(projects);
-
 ---
 
 <Layout title="Mis Proyectos">
