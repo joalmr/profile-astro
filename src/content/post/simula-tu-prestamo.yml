@@ -1,5 +1,5 @@
 name: Simula tu préstamo
 description: Calcula cuotas, intereses y costos totales para ayudarte a planificar tu financiamiento.
-image: /assets/images/projects/prestamo.png
+image: ./images/prestamo.png
 url: https://play.google.com/store/apps/details?id=com.aedev.prestamo
 detail: Simula tu préstamo es una aplicación gratuita que te ayuda a calcular el costo de un préstamo y verificar si los pagos mensuales son asequibles. Solo debes ingresar el monto del préstamo, la tasa de interés y el plazo de pago, y la aplicación te mostrará cuánto deberás pagar cada mes, además del monto total de interés a lo largo del préstamo. Ya sea para comprar una computadora, un auto o solicitar un préstamo personal, esta herramienta te ofrece una visión clara de tus opciones financieras, eliminando cálculos manuales e incertidumbre. Con la posibilidad de experimentar con diferentes escenarios y ajustar los parámetros según tus necesidades, contarás con una forma sencilla de planificar tu futuro financiero.
