@@ -1,3 +1,3 @@
 # Profile
 
-Página personal proyectos y experiencia
+Página personal, proyectos y experiencia
