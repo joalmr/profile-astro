@@ -24,13 +24,7 @@ const { project } = Astro.props;
           description={project.description}
         />
     
-        <!-- <img src={project.image.src} class="relative z-30 w-full my-10 rounded-xl" /> -->
-        <Image
-            src={project.image}
-            alt={"image"}
-            class="relative z-30 w-full my-10 rounded-xl"
-            format="webp"
-        />
+        <img src={project.image.src} class="relative z-30 w-full my-10 rounded-xl" /> 
 
         <p>
             {project.detail}
