@@ -30,7 +30,9 @@ const { project } = Astro.props;
         </p>
 
         <div class="flex items-center justify-center w-full py-5">
-            <Button text={`Ver ${project.name}`} link={project.url} />
+            {
+             project.url && <Button text={`Ver ${project.name}`} link={project.url} />                
+            }
         </div>
     
       </section>
