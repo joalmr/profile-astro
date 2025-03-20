@@ -38,6 +38,7 @@ jobs:
         uses: denoland/deployctl@v1
         with:
           project: "joalmr"
+          entrypoint: "jsr:@std/http/file-server"
           root: "dist"
           
           
