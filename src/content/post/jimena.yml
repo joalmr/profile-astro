@@ -3,3 +3,6 @@ description: Creación de página web de marca personal.
 image: ./images/jimena.png
 url: https://jimenamassa.netlify.app
 detail: Jimena Massa es una diseñadora apasionada por la identidad visual, el diseño y la experiencia de usuario (UI/UX). Con una trayectoria marcada por la creatividad y el detalle, transforma ideas en conceptos visuales que conectan con las audiencias y refuerzan la personalidad de cada marca. Su enfoque estratégico combina estética y funcionalidad, logrando identidades memorables y experiencias digitales intuitivas. A través de un diseño bien pensado, ayuda a emprendedores y empresas a diferenciarse en un mercado visualmente competitivo, creando marcas que comunican su esencia de manera auténtica y efectiva.
+tags:
+  - Astro
+  - Tailwind

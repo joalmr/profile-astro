@@ -3,3 +3,7 @@ description: Optimiza la gestión de citas, historial clínico y comunicación c
 image: ./images/proypet-partners.png
 url: ""
 detail: Descubre Proypet, la aplicación diseñada para veterinarios y groomers que facilita el seguimiento de clientes, el control de servicios y la postventa. Con Proypet, puedes organizar y planificar citas, gestionar la programación de servicios y mantener un control detallado del historial clínico de tus pacientes. Además, permite almacenar registros digitales en la nube, enviar avisos a los clientes y acceder a estadísticas para optimizar la gestión de tu veterinaria. Todo en una herramienta práctica y eficiente que mejora la administración de tu negocio.
+tags:
+  - Flutter
+  - Firebase
+  - Supabase

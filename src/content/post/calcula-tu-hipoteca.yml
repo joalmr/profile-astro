@@ -3,3 +3,5 @@ description: Calcula y personaliza fácilmente la cuota mensual de tu hipoteca.
 image: ./images/hipoteca.png
 url: https://play.google.com/store/apps/details?id=com.aedev.hipoteca
 detail: Calcula la cuota mensual de tu hipoteca sin complicaciones con una aplicación que ofrece estimaciones precisas mediante algoritmos avanzados que consideran el capital principal y los intereses, permitiéndote planificar tu presupuesto de manera efectiva. Con opciones de personalización flexible, puedes ajustar la tasa de interés, el plazo y el monto del préstamo para obtener resultados adaptados a tu situación financiera. Además, la aplicación proporciona un desglose detallado de los intereses a pagar y el capital restante a lo largo del tiempo, dándote una visión clara de la evolución de tu préstamo y posibles ahorros en intereses. Todo esto en una interfaz elegante y fácil de usar, diseñada para una experiencia fluida y accesible incluso para quienes tienen poca experiencia en finanzas personales.
+tags:
+  - Flutter

@@ -3,3 +3,7 @@ description: Herramienta para petlovers y veterinarios.
 image: ./images/proypet-web.png
 url: https://proypet.github.io
 detail: Proypet ahora también está disponible en su versión web, brindando a veterinarias y groomers una plataforma aún más accesible para gestionar su negocio. Con las mismas ventajas de la App, la versión web permite organizar citas, administrar historiales clínicos, enviar recordatorios automáticos y ofrecer servicios con la opción de recojo a domicilio. Además, los clientes pueden explorar veterinarias, revisar servicios, precios y calificaciones, todo desde cualquier dispositivo. Con una interfaz intuitiva y funcionalidades avanzadas, Proypet Web es la solución ideal para optimizar la gestión y mejorar la experiencia tanto de profesionales como de dueños de mascotas.
+tags:
+  - HTML
+  - CSS
+  - JavaScript
