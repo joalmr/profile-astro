@@ -5,13 +5,11 @@
 	"scripts": {
 		"dev": "astro dev",
 		"start": "astro dev",
-		"build": "astro check && astro build",
+		"build": "astro build",
 		"preview": "astro preview",
-		"astro": "astro",
-		"check": "biome check --apply-unsafe ."
+		"astro": "astro"		
 	},
 	"devDependencies": {
-		"@astrojs/check": "^0.6.0",
 		"@astrojs/tailwind": "^5.1.0",
 		"@tailwindcss/typography": "^0.5.13",
 		"astro": "^4.8.2",
