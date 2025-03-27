@@ -3,12 +3,18 @@ import experiences from "@collections/experiences.json";
 import AboutExperience from "@components/about-experience.astro";
 import PageHeading from "@components/page-heading.astro";
 import Layout from "@layouts/main.astro";
+import { getAbout } from "src/lib/strapi";
+
+const {data} = await getAbout();
+// console.log("about", data);
+const {title,blocks,Experiences,Seo} = data;
+console.log({title});
 ---
 
 <Layout title="Acerca de mí">
   <section class="relative z-20 max-w-2xl mx-auto my-12 px-7 lg:px-0">
     <PageHeading
-      title="Acerca de mí"
+      title={title}
       description="Hola 👋 Soy un ingeniero frontend de Lima, Perú. Me apasiona crear nuevos productos y aprender nuevas tecnologías."
     />
 
