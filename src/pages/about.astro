@@ -5,28 +5,30 @@ import PageHeading from "@components/page-heading.astro";
 import Layout from "@layouts/main.astro";
 import { getAbout } from "src/lib/strapi";
 
+import markdownit from "markdown-it";
+const md = markdownit();
+
 const {data} = await getAbout();
 // console.log("about", data);
-const {title,blocks,Experiences,Seo} = data;
-console.log({title});
+const {title,description,blocks,Experiences,Seo} = data;
+const {body} = blocks.at(1);
+
+
+const result = md.render(body);
+
 ---
 
-<Layout title="Acerca de mí">
+<Layout title={title}>
   <section class="relative z-20 max-w-2xl mx-auto my-12 px-7 lg:px-0">
     <PageHeading
       title={title}
-      description="Hola 👋 Soy un ingeniero frontend de Lima, Perú. Me apasiona crear nuevos productos y aprender nuevas tecnologías."
+      description={description}
     />
 
     <img src="/assets/images/about.webp" class="relative z-30 w-full my-10 rounded-xl" />
 
-    <h2 class="mb-2 text-2xl font-bold dark:text-neutral-200">Short Bio</h2>
-    <p
-      class="text-sm leading-6 text-gray-600 dark:text-neutral-400 sm:leading-7 lg:leading-8 sm:text-base lg:text-lg"
-    >
-    Apasionado por la creación de aplicaciones móviles que combinan rendimiento, usabilidad e innovación. Con más de 10 años de experiencia en desarrollo, me especializo en Flutter y he trabajado en proyectos para diversas industrias, como seguros, bienestar animal y finanzas. Entre mis desarrollos destacan Mi Espacio Pacífico para Pacífico Seguros, la app Proypet para la gestión de cuidados de mascotas y una aplicación de cálculo de préstamos hipotecarios. Me motiva enfrentar nuevos retos, aprender tecnologías emergentes y seguir creando soluciones que marquen la diferencia.
-    </p>
-
+    <div class="mk_load" set:html={result} />
+    
     <h2
       class="mt-5 mb-2 text-2xl font-bold lg:mt-10 sm:mt-6 dark:text-neutral-200"
     >
@@ -64,3 +66,16 @@ console.log({title});
     </p>
   </section>
 </Layout>
+
+<script>
+    document.addEventListener("astro:page-load", () => {
+      // console.log('page load');  
+      const mk_h2 = document.querySelector('.mk_load>h2') as HTMLElement;
+      const mk_p = document.querySelector('.mk_load>p') as HTMLElement;
+      
+      
+      mk_h2.className = `mt-5 mb-2 text-2xl font-bold lg:mt-10 sm:mt-6 dark:text-neutral-200`;
+      mk_p.className = `text-sm leading-6 text-gray-600 dark:text-neutral-400 sm:leading-7 lg:leading-8 sm:text-base lg:text-lg`;
+  })
+</script>
+
