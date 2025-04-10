@@ -1,0 +1,64 @@
+---
+import Layout from "@layouts/main.astro";
+---
+
+<Layout title="404">
+  <section class="page_404">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="col-sm-10 col-sm-offset-1 text-center">
+            <div class="four_zero_four_bg">
+              <h1 class="text-center">404</h1>
+            </div>
+
+            <div class="contant_box_404">
+              <h3 class="h2">Parece que estás perdido</h3>
+
+              <p>¡La página que estás buscando no está disponible!</p>
+
+              <a href="/" class="link_404">Ir a Inicio</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</Layout>
+<style>
+  /*======================
+    404 page
+=======================*/
+
+  .page_404 {
+    padding: 40px 0;
+    /* background: #fff; */
+  }
+
+  .page_404 img {
+    width: 100%;
+  }
+
+  .four_zero_four_bg {
+    background-image: url(https://cdn.dribbble.com/users/285475/screenshots/2083086/dribbble_1.gif);
+    height: 400px;
+    background-position: center;
+  }
+
+  .four_zero_four_bg h1 {
+    font-size: 80px;
+  }
+
+  .four_zero_four_bg h3 {
+    font-size: 80px;
+  }
+
+  .link_404 {
+    @apply inline-flex w-auto px-4 py-2 mt-5 text-xs font-semibold duration-300 ease-out;
+    @apply border rounded-full bg-neutral-900 text-neutral-100;
+    @apply hover:border-neutral-700 border-neutral-900 hover:bg-white hover:text-neutral-900;
+  }
+  .contant_box_404 {
+    margin-top: -50px;
+  }
+</style>
