@@ -32,7 +32,6 @@ Durante el desarrollo de este proyecto aprendí a:
 
 - Gestionar contenido estático con archivos YAML en Astro.
 - Diseñar con un enfoque mobile-first usando TailwindCSS.
-- Separar contenido de la lógica visual para facilitar la escalabilidad y mantenimiento.
 
 ## 🚀 Próximas mejoras (opcional)
 
