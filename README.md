@@ -42,7 +42,7 @@ Durante el desarrollo de este proyecto aprendí a:
 ## 📩 Contacto
 
 Puedes ver más sobre mí o contactarme a través de:  
-🌐 [https://joalmr.vercel.app](https://joalmr.vercel.app)
+🌐 [https://www.linkedin.com/in/alonsomassa/](https://www.linkedin.com/in/alonsomassa/)
 
 ---
 
