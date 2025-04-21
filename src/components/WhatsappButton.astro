@@ -1,0 +1,37 @@
+---
+// Puedes pasar el número como prop si deseas reutilizar el componente
+const { phone = "51993926739", message = "¡Hola! Quisiera más información." } = Astro.props;
+const encodedMessage = encodeURIComponent(message);
+const whatsappLink = `https://wa.me/${phone}?text=${encodedMessage}`;
+---
+
+<a href={whatsappLink} class="whatsapp-button" target="_blank" rel="noopener noreferrer">
+  <img src="/assets/images/whatsapp.svg" alt="WhatsApp" />
+</a>
+
+<style>
+  .whatsapp-button {
+    position: fixed;
+    bottom: 60px;
+    right: 20px;
+    z-index: 1000;
+    width: 60px;
+    height: 60px;
+    background-color: #25D366;
+    border-radius: 50%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.2s ease;
+  }
+
+  .whatsapp-button:hover {
+    transform: scale(1.1);
+  }
+
+  .whatsapp-button img {
+    width: 32px;
+    height: 32px;
+  }
+</style>

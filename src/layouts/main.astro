@@ -1,4 +1,5 @@
 ---
+import WhatsappButton from "@components/WhatsappButton.astro";
 import Footer from "../components/footer.astro";
 import Header from "../components/header.astro";
 import SquareLines from "../components/square-lines.astro";
@@ -27,6 +28,7 @@ const { title } = Astro.props;
     <SquareLines />
     <Header />
     <slot />
+    <WhatsappButton />
     <Footer />
     <SpeedInsights/>
     <script src="../assets/js/main.js"></script>
