@@ -47,3 +47,7 @@ Puedes ver más sobre mí o contactarme a través de:
 ---
 
 ¡Gracias por visitar mi portafolio! ✨
+
+
+
+This project is based on the [ccbikai/astro-aria](https://github.com/ccbikai/astro-aria) project.
