@@ -1,0 +1,8 @@
+name: Flgen
+description: Este repositorio proporciona scripts para automatizar la creación de la arquitectura base de un proyecto Flutter.
+image: ./images/flgen.png
+url: https://pub.dev/packages/flgen
+detail: Este repositorio proporciona scripts para automatizar la creación de la arquitectura base de un proyecto Flutter. Facilita la generación de carpetas y archivos esenciales, permitiendo iniciar el desarrollo de manera rápida y organizada.
+tags:
+  - Dart
+  - Flutter
