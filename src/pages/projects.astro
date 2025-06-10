@@ -5,7 +5,10 @@ import Project from "@components/project.astro";
 import Layout from "@layouts/main.astro";
 import { getCollection } from "astro:content";
 
-const projects = await getCollection("post");
+// const projects = await getCollection("post");
+const projects = (await getCollection("post")).sort((a, b) =>
+  new Date(b.data.date).getTime() - new Date(a.data.date).getTime()
+);
 ---
 
 <Layout title="Mis Proyectos">
