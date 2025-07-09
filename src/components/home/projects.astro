@@ -17,7 +17,7 @@ const posts = await sanity.fetch(`*[_type == "post"] | order(date desc){
       url
     }
   },
-  "slug": slug.current
+  slug,
 }`);
 ---
 
