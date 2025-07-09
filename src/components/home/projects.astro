@@ -1,13 +1,7 @@
 ---
-import { getCollection } from "astro:content";
 import Button from "../button.astro";
 import Project from "../project.astro";
 import { sanity } from "sanityClient";
-
-// const projects = await getCollection("post");
-// const projects = (await getCollection("post")).sort((a, b) =>
-//   new Date(b.data.date).getTime() - new Date(a.data.date).getTime()
-// );
 
 const posts = await sanity.fetch(`*[_type == "post"] | order(date desc){
   "name": title,

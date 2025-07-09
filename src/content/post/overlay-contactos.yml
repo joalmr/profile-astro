@@ -1,9 +1,0 @@
-name: Overlay Contactos
-description: Simplifica la manera en que los empleados comparten su información.
-image: ./images/overlay-contactos.png
-url: ""
-detail: Página web estilo Linktree para los trabajadores de Overlay, con el objetivo de simplificar la manera en que comparten sus datos de contacto. Ahora, cada empleado cuenta con un perfil personalizado donde puede centralizar toda su información en un solo lugar.||Cada página incluye nombre, cargo y foto, junto con accesos directos a LinkedIn, WhatsApp, correo electrónico y la opción de guardar el contacto con un solo clic. Todo con un diseño limpio, profesional y alineado con la identidad de la empresa.
-tags:
-  - Astro
-  - Tailwind
-date: 2025-03-15
