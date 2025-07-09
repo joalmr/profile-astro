@@ -1,20 +1,42 @@
 ---
 import Layout from "@layouts/main.astro";
 import type { GetStaticPaths } from "astro";
-import { getCollection } from "astro:content";
 import Button from "@components/button.astro";
 import PageHeading from "@components/page-heading.astro";
+import { sanity } from "sanityClient";
 
 export const getStaticPaths = (async () => {
-  const projects = await getCollection("post");
+  // 1. Solo obtenemos los slugs para generar las páginas
+  const posts = await sanity.fetch(`*[_type == "post"]{ "slug": slug }`);
 
-  return projects.map((project) => ({
-    params: { slug: project.id },
-    props: { project: project.data },
+  return posts.map(({ slug }) => ({
+    params: { slug: slug },
   }));
 }) satisfies GetStaticPaths;
 
-const { project } = Astro.props;
+// 2. Obtenemos el slug de los parámetros de la URL
+const { slug } = Astro.params;
+
+// 3. Hacemos una nueva petición para obtener los datos de ESTA página en específico
+const project = await sanity.fetch(
+  `*[_type == "post" && slug == $slug][0]{
+  "name": title,
+  description,
+  content,
+  image {
+    asset->{
+      url
+    }
+  },
+  tags,
+  slug,
+  url,
+}`,
+  { slug } // Pasamos el slug como parámetro de forma segura
+);
+
+// 4. Si no se encuentra el proyecto, redirigimos a una página 404
+if (!project) return Astro.redirect("/404");
 ---
 
 <Layout title={project.name}>
@@ -22,7 +44,7 @@ const { project } = Astro.props;
     <PageHeading title={project.name} description={project.description} />
 
     <img
-      src={project.image.src}
+      src={project.image.asset.url}
       class="relative z-30 w-full my-10 rounded-xl"
     />
 
@@ -37,7 +59,7 @@ const { project } = Astro.props;
     }
 
     <p>
-      {project.detail}
+      {project.content}
     </p>
 
     <div class="flex items-center justify-center w-full py-5">
