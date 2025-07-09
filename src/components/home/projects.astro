@@ -2,11 +2,23 @@
 import { getCollection } from "astro:content";
 import Button from "../button.astro";
 import Project from "../project.astro";
+import { sanity } from "sanityClient";
 
 // const projects = await getCollection("post");
-const projects = (await getCollection("post")).sort((a, b) =>
-  new Date(b.data.date).getTime() - new Date(a.data.date).getTime()
-);
+// const projects = (await getCollection("post")).sort((a, b) =>
+//   new Date(b.data.date).getTime() - new Date(a.data.date).getTime()
+// );
+
+const posts = await sanity.fetch(`*[_type == "post"] | order(date desc){
+  "name": title,
+  description,
+  image {
+    asset->{
+      url
+    }
+  },
+  "slug": slug.current
+}`);
 ---
 
 <section class="max-w-4xl mx-auto px-7 lg:px-0">
@@ -22,13 +34,13 @@ const projects = (await getCollection("post")).sort((a, b) =>
     class="grid items-stretch w-full grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-7 mt-7"
   >
     {
-      projects.map((project) => {
+      posts.map(({ name, description, image, slug }) => {
         return (
           <Project
-            name={project.data.name}
-            description={project.data.description}
-            image={project.data.image}
-            url={`/project/${project.id}`}
+            name={name}
+            description={description}
+            image={image.asset.url}
+            url={`/project/${slug}`}
           />
         )
       })
